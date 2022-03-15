@@ -6,4 +6,83 @@
     android:layout_height="match_parent"
     tools:context=".DegreeRequirementsActivity">
 
+    <RadioButton
+        android:id="@+id/generalButton"
+        android:layout_width="415dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="401dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="501dp"
+        android:layout_marginBottom="53dp"
+        android:text="General"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/cyberSecButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/cyberSecButton"
+        android:layout_width="415dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="401dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="501dp"
+        android:text="Cybersecurity"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generalButton" />
+
+    <RadioButton
+        android:id="@+id/dataScienceButton"
+        android:layout_width="415dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="401dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="501dp"
+        android:text="Data Science"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cyberSecButton" />
+
+    <RadioButton
+        android:id="@+id/machineLearningButton"
+        android:layout_width="415dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="401dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="501dp"
+        android:text="Machine Learning"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataScienceButton" />
+
+    <RadioButton
+        android:id="@+id/quantumInfoButton"
+        android:layout_width="415dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="401dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="85dp"
+        android:text="Quantum Information"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/machineLearningButton" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="271dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="673dp"
+        android:layout_marginEnd="2dp"
+        android:text="Next"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

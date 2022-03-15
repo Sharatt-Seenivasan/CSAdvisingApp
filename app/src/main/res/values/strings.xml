@@ -1,3 +1,65 @@
 <resources>
     <string name="app_name">CSAdvisingApp</string>
+
+    <string name="time_1">1</string>
+    <string name="time_2">2</string>
+    <string name="time_3">3</string>
+    <string name="time_4">4</string>
+    <string name="time_5">5</string>
+    <string name="time_6">6</string>
+    <string name="time_7">7</string>
+    <string name="time_8">8</string>
+    <string name="time_9">9</string>
+    <string name="time_10">10</string>
+    <string name="time_11">11</string>
+    <string name="time_12">12</string>
+    <string name="time_00">00</string>
+    <string name="time_15">15</string>
+    <string name="time_30">30</string>
+    <string name="time_45">45</string>
+    <string name="time_am">AM</string>
+    <string name="time_pm">PM</string>
+
+    <string name="advising_title">Advising</string>
+    <string name="advising_time">Preferred Time(s)</string>
+    <string name="advising_day">Preferred Day(s)</string>
+    <string name="advising_appointment">Request Appointment</string>
+    <string name="advising_select">Select Time</string>
+
+    <string name="day_monday">Mon</string>
+    <string name="day_tuesday">Tue</string>
+    <string name="day_wednesday">Wed</string>
+    <string name="day_thursday">Thu</string>
+    <string name="day_friday">Fri</string>
+    <string name="day_saturday">Sat</string>
+    <string name="day_sunday">Sun</string>
+
+    <string name="blank"/>
+
+    <string-array name="ampm">
+        <item>@string/time_am</item>
+        <item>@string/time_pm</item>
+    </string-array>
+
+    <string-array name="time_hour">
+        <item>@string/time_1</item>
+        <item>@string/time_2</item>
+        <item>@string/time_3</item>
+        <item>@string/time_4</item>
+        <item>@string/time_5</item>
+        <item>@string/time_6</item>
+        <item>@string/time_7</item>
+        <item>@string/time_8</item>
+        <item>@string/time_9</item>
+        <item>@string/time_10</item>
+        <item>@string/time_11</item>
+        <item>@string/time_12</item>
+    </string-array>
+
+    <string-array name="time_minutes">
+        <item>@string/time_00</item>
+        <item>@string/time_15</item>
+        <item>@string/time_30</item>
+        <item>@string/time_45</item>
+    </string-array>
 </resources>
