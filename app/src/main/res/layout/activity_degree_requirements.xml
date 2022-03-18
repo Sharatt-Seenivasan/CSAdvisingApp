@@ -6,83 +6,163 @@
     android:layout_height="match_parent"
     tools:context=".DegreeRequirementsActivity">
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/generalRequirements"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="440dp"
+        android:layout_marginTop="117dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="General Requirements"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/upperLevelConcentrationRequirements"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="440dp"
+        android:layout_marginTop="59dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Upper Level Concentration"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lowerLevelRequirements" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/trackSpecificRequirements"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="440dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="112dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Track Specific Requirements"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upperLevelConcentrationRequirements" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lowerLevelRequirements"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="440dp"
+        android:layout_marginTop="59dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Lower Level Coursework Requirements"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generalRequirements" />
+
+
     <RadioButton
         android:id="@+id/generalButton"
-        android:layout_width="415dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="401dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="501dp"
-        android:layout_marginBottom="53dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="84dp"
         android:text="General"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/cyberSecButton"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioButton
         android:id="@+id/cyberSecButton"
-        android:layout_width="415dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="401dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="501dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="84dp"
         android:text="Cybersecurity"
-        android:textSize="34sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/generalButton" />
 
     <RadioButton
-        android:id="@+id/dataScienceButton"
-        android:layout_width="415dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="401dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="501dp"
-        android:text="Data Science"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cyberSecButton" />
-
-    <RadioButton
         android:id="@+id/machineLearningButton"
-        android:layout_width="415dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="401dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="501dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="84dp"
         android:text="Machine Learning"
-        android:textSize="34sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dataScienceButton" />
 
     <RadioButton
         android:id="@+id/quantumInfoButton"
-        android:layout_width="415dp"
+        android:layout_width="200dp"
         android:layout_height="80dp"
-        android:layout_marginStart="401dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginBottom="85dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="84dp"
         android:text="Quantum Information"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/machineLearningButton" />
 
-    <Button
-        android:id="@+id/nextButton"
-        android:layout_width="271dp"
-        android:layout_height="141dp"
-        android:layout_marginTop="673dp"
-        android:layout_marginEnd="2dp"
-        android:text="Next"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <RadioButton
+        android:id="@+id/dataScienceButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="84dp"
+        android:text="Data Science"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/cyberSecButton" />
+
+    <TextView
+        android:id="@+id/degreeRequirementsTitle"
+        android:layout_width="600dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="16dp"
+        android:text="Degree Requirements"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chooseYourTrack"
+        android:layout_width="202dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="82dp"
+        android:text="Choose your track"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <Button-->
+<!--        android:id="@+id/nextButton"-->
+<!--        android:layout_width="271dp"-->
+<!--        android:layout_height="141dp"-->
+<!--        android:layout_marginTop="673dp"-->
+<!--        android:layout_marginEnd="2dp"-->
+<!--        android:text="Next"-->
+<!--        android:textSize="34sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

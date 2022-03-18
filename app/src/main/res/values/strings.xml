@@ -34,7 +34,7 @@
     <string name="day_saturday">Sat</string>
     <string name="day_sunday">Sun</string>
 
-    <string name="blank"/>
+    <string name="blank" />
 
     <string-array name="ampm">
         <item>@string/time_am</item>

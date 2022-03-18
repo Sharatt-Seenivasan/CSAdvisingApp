@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSAdvisingApp">
         <activity
+            android:name=".degree_requirements.LowerLevelCourseworkDegreeRequirementsActivity"
+            android:exported="false" />
+        <activity
             android:name=".DegreeRequirementsActivity"
             android:exported="false" />
         <activity

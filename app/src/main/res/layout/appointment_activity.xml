@@ -8,8 +8,8 @@
 
     <CheckBox
         android:id="@+id/sundayBox"
-        android:layout_width="30dp"
-        android:layout_height="45dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/saturdayBox"
         app:layout_constraintStart_toEndOf="@+id/saturdayBox"
@@ -17,8 +17,8 @@
 
     <CheckBox
         android:id="@+id/fridayBox"
-        android:layout_width="30dp"
-        android:layout_height="45dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/thrusdayBox"
         app:layout_constraintStart_toEndOf="@+id/thrusdayBox"
@@ -26,8 +26,8 @@
 
     <CheckBox
         android:id="@+id/saturdayBox"
-        android:layout_width="30dp"
-        android:layout_height="45dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/fridayBox"
         app:layout_constraintStart_toEndOf="@+id/fridayBox"
@@ -35,8 +35,8 @@
 
     <CheckBox
         android:id="@+id/thrusdayBox"
-        android:layout_width="30dp"
-        android:layout_height="45dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/wednesdayBox"
         app:layout_constraintStart_toEndOf="@+id/wednesdayBox"
@@ -44,8 +44,8 @@
 
     <CheckBox
         android:id="@+id/wednesdayBox"
-        android:layout_width="30dp"
-        android:layout_height="45dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/tuesdayBox"
         app:layout_constraintStart_toEndOf="@+id/tuesdayBox"
@@ -53,8 +53,8 @@
 
     <CheckBox
         android:id="@+id/tuesdayBox"
-        android:layout_width="30dp"
-        android:layout_height="45dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/mondayBox"
         app:layout_constraintStart_toEndOf="@+id/mondayBox"
@@ -62,8 +62,8 @@
 
     <CheckBox
         android:id="@+id/mondayBox"
-        android:layout_width="30dp"
-        android:layout_height="45dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="60dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toStartOf="@+id/textDays" />
