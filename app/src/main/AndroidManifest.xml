@@ -7,7 +7,6 @@
         android:normalScreens="true"
         android:smallScreens="true"
         android:xlargeScreens="true"
-
     </supports-screens>
 
     <application
@@ -17,6 +16,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CSAdvisingApp">
+        <activity
+            android:name=".UpperLevelConcentrationRequirements"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralCourseworkDegreeRequirements"
+            android:exported="false" />
         <activity
             android:name=".LowerLevelCourseworkDegreeRequirementsActivity"
             android:exported="false" />
