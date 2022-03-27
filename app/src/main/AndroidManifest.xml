@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="net.cmsc_434.cs_advising_app">
 
+    <supports-screens>
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"
+
+    </supports-screens>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSAdvisingApp">
         <activity
-            android:name=".degree_requirements.LowerLevelCourseworkDegreeRequirementsActivity"
+            android:name=".LowerLevelCourseworkDegreeRequirementsActivity"
             android:exported="false" />
         <activity
             android:name=".DegreeRequirementsActivity"
