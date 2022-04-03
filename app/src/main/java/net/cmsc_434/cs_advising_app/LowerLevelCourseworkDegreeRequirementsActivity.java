@@ -30,7 +30,7 @@ public class LowerLevelCourseworkDegreeRequirementsActivity extends AppCompatAct
         centerTitle();
 
         expandableListViewExample = (ExpandableListView) findViewById(R.id.expandableListViewSample);
-        expandableDetailList = ExpandableListDataItems.getData();
+        expandableDetailList = ExpandableListDataItems.getLLRData();
         expandableTitleList = new ArrayList<String>(expandableDetailList.keySet());
         expandableListAdapter = new CustomizedExpandableListAdapter(this, expandableTitleList, expandableDetailList);
         expandableListViewExample.setAdapter(expandableListAdapter);
