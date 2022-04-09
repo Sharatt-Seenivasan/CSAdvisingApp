@@ -12,29 +12,29 @@ import android.widget.Toast;
 import android.widget.Toolbar;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
-public class GeneralCourseworkDegreeRequirements extends AppCompatActivity {
+public class GeneralEducationDegreeRequirements extends AppCompatActivity {
 
     ExpandableListView expandableListViewExample;
     ExpandableListAdapter expandableListAdapter;
     List<String> expandableTitleList;
     HashMap<String, List<String>> expandableDetailList;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_general_coursework_degree_requirements);
+        setContentView(R.layout.activity_general_education_degree_requirements);
 
-        setTitle("General Track");
+        setTitle("General Education");
         centerTitle();
 
-        expandableListViewExample = (ExpandableListView) findViewById(R.id.generalList);
-        expandableDetailList = ExpandableListDataItems.getGRData();
+        expandableListViewExample = (ExpandableListView) findViewById(R.id.generalEducationList);
+        expandableDetailList = ExpandableListDataItems.getGenEd();
         expandableTitleList = new ArrayList<String>(expandableDetailList.keySet());
-        Collections.sort(expandableTitleList);
+
 
         expandableListAdapter = new CustomizedExpandableListAdapter(this, expandableTitleList, expandableDetailList);
         expandableListViewExample.setAdapter(expandableListAdapter);
@@ -73,7 +73,6 @@ public class GeneralCourseworkDegreeRequirements extends AppCompatActivity {
         });
 
     }
-
 
     private void centerTitle() {
         ArrayList<View> textViews = new ArrayList<>();

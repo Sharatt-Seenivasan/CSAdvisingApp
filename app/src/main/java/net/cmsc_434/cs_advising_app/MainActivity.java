@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     public Button degreeRequirementButton;
+    public Button advisingAppointmentsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,17 +23,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        setTitle("University of Maryland");
+        setTitle("University of Maryland CS Advising App");
         centerTitle();
 
 
 
         degreeRequirementButton = (Button)findViewById(R.id.button10);
+        advisingAppointmentsButton = (Button)findViewById(R.id.button8);
+
 
         degreeRequirementButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,DegreeRequirementsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        advisingAppointmentsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(MainActivity.this,AppointmentActivity.class);
                 startActivity(intent);
             }
         });

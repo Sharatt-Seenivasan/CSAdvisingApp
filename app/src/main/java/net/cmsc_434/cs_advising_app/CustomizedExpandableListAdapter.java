@@ -2,6 +2,7 @@ package net.cmsc_434.cs_advising_app;
 
 import android.content.Context;
 import android.graphics.Typeface;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -85,7 +86,7 @@ public class CustomizedExpandableListAdapter extends BaseExpandableListAdapter {
             view = layoutInflater.inflate(R.layout.list_item, null);
         }
         TextView expandedListTextView = (TextView) view.findViewById(R.id.expandedListItem);
-        expandedListTextView.setText(expandedListText);
+        expandedListTextView.setText(Html.fromHtml(expandedListText));
         expandedListTextView.setTextSize(30.0f);
         return view;
     }

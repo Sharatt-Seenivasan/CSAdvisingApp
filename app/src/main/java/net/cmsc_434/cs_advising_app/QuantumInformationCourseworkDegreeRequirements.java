@@ -16,7 +16,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
-public class GeneralCourseworkDegreeRequirements extends AppCompatActivity {
+public class QuantumInformationCourseworkDegreeRequirements extends AppCompatActivity {
 
     ExpandableListView expandableListViewExample;
     ExpandableListAdapter expandableListAdapter;
@@ -26,15 +26,15 @@ public class GeneralCourseworkDegreeRequirements extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_general_coursework_degree_requirements);
+        setContentView(R.layout.activity_quantum_information_coursework_degree_requirements);
 
-        setTitle("General Track");
+        setTitle("Quantum Information Track");
         centerTitle();
 
-        expandableListViewExample = (ExpandableListView) findViewById(R.id.generalList);
-        expandableDetailList = ExpandableListDataItems.getGRData();
+        expandableListViewExample = (ExpandableListView) findViewById(R.id.quantumInfoList);
+        expandableDetailList = ExpandableListDataItems.getQuantumInformation();
         expandableTitleList = new ArrayList<String>(expandableDetailList.keySet());
-        Collections.sort(expandableTitleList);
+
 
         expandableListAdapter = new CustomizedExpandableListAdapter(this, expandableTitleList, expandableDetailList);
         expandableListViewExample.setAdapter(expandableListAdapter);
@@ -71,9 +71,7 @@ public class GeneralCourseworkDegreeRequirements extends AppCompatActivity {
                 return false;
             }
         });
-
     }
-
 
     private void centerTitle() {
         ArrayList<View> textViews = new ArrayList<>();

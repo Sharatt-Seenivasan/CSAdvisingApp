@@ -26,7 +26,7 @@
         android:layout_width="600dp"
         android:layout_height="120dp"
         android:layout_marginStart="340dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:background="@android:color/darker_gray"
         android:backgroundTint="@android:color/darker_gray"
         android:text="Upper Level Concentration"
@@ -42,25 +42,22 @@
         android:layout_width="600dp"
         android:layout_height="120dp"
         android:layout_marginStart="340dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginTop="40dp"
         android:background="@android:color/darker_gray"
         android:backgroundTint="@android:color/darker_gray"
         android:text="Track Specific Requirements"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upperLevelConcentrationRequirements"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@+id/upperLevelConcentrationRequirements" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/lowerLevelRequirements"
         android:layout_width="600dp"
         android:layout_height="120dp"
         android:layout_marginStart="340dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:background="@android:color/darker_gray"
         android:backgroundTint="@android:color/darker_gray"
         android:text="Lower Level Coursework Requirements"
@@ -83,6 +80,17 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/goHome1"
+        android:layout_width="213dp"
+        android:layout_height="158dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="34dp"
+        android:text="Main Menu"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <!--    <Button-->
 <!--        android:id="@+id/nextButton"-->

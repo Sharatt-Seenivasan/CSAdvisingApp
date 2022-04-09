@@ -17,6 +17,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSAdvisingApp">
         <activity
+            android:name=".SelectTrackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuantumInformationCourseworkDegreeRequirements"
+            android:exported="false" />
+        <activity
+            android:name=".MachineLearningCourseworkDegreeRequirements"
+            android:exported="false" />
+        <activity
+            android:name=".CyberSecurityCourseworkDegreeRequirements"
+            android:exported="false" />
+        <activity
+            android:name=".DataScienceCourseworkDegreeRequirements"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralEducationDegreeRequirements"
+            android:exported="false" />
+        <activity
             android:name=".UpperLevelConcentrationRequirements"
             android:exported="false" />
         <activity

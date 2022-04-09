@@ -18,18 +18,20 @@ public class DegreeRequirementsActivity extends AppCompatActivity {
     public Button lowerLeverlReqs;
     public Button upperLevelConcentrationReqs;
     public Button trackSpecificReqs;
+    public Button homeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_degree_requirements);
-        setTitle("University of Maryland");
+        setTitle("Degree Requirements");
         centerTitle();
 
         generalReqs = findViewById(R.id.generalRequirements);
         upperLevelConcentrationReqs = findViewById(R.id.upperLevelConcentrationRequirements);
         lowerLeverlReqs = (Button)findViewById(R.id.lowerLevelRequirements);
         trackSpecificReqs = findViewById(R.id.trackSpecificRequirements);
+        homeButton = findViewById(R.id.goHome1);
 
         lowerLeverlReqs.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +40,47 @@ public class DegreeRequirementsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        trackSpecificReqs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(DegreeRequirementsActivity.this,SelectTrackActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        generalReqs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DegreeRequirementsActivity.this,GeneralEducationDegreeRequirements.class);
+                startActivity(intent);
+            }
+        });
+
+
+        upperLevelConcentrationReqs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DegreeRequirementsActivity.this,UpperLevelConcentrationRequirements.class);
+                startActivity(intent);
+            }
+        });
+
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DegreeRequirementsActivity.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+//        generalReqs.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(DegreeRequirementsActivity.this,GeneralCourseworkDegreeRequirements.class);
+//                startActivity(intent);
+//            }
+//        });
 
     }
 

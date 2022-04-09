@@ -26,10 +26,10 @@ public class LowerLevelCourseworkDegreeRequirementsActivity extends AppCompatAct
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lower_level_coursework_degree_requirements);
-        setTitle("University of Maryland");
+        setTitle("Lower Level Coursework");
         centerTitle();
 
-        expandableListViewExample = (ExpandableListView) findViewById(R.id.expandableListViewSample);
+        expandableListViewExample = (ExpandableListView) findViewById(R.id.lowerLevelList);
         expandableDetailList = ExpandableListDataItems.getLLRData();
         expandableTitleList = new ArrayList<String>(expandableDetailList.keySet());
         expandableListAdapter = new CustomizedExpandableListAdapter(this, expandableTitleList, expandableDetailList);
