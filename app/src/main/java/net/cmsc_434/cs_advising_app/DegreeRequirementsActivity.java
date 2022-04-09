@@ -55,6 +55,14 @@ public class DegreeRequirementsActivity extends AppCompatActivity {
             }
         });
 
+        upperLevelConcentrationReqs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DegreeRequirementsActivity.this,UpperLevelConcentrationRequirements.class);
+                startActivity(intent);
+            }
+        });
+
 //        generalReqs.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
