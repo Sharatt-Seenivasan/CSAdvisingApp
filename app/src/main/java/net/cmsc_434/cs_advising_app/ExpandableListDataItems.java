@@ -28,7 +28,7 @@ public class ExpandableListDataItems {
 
     }
 
-    public static HashMap<String, List<String>> getGRData(){
+    public static HashMap<String, List<String>> getGRData() {
         HashMap<String, List<String>> expandableDetailList = new HashMap<String, List<String>>();
 
         List<String> systems = new ArrayList<String>();
@@ -68,7 +68,7 @@ public class ExpandableListDataItems {
         List<String> numericalAnalysis = new ArrayList<>();
         numericalAnalysis.add("CMSC 460 (3 credits) Computational Methods  or CMSC 466 (3 credits) Introduction to Numerical Analysis");
 
-        expandableDetailList.put("Area 1: Systems",systems);
+        expandableDetailList.put("Area 1: Systems", systems);
         expandableDetailList.put("Area 2: Information Processing", infoProcessing);
         expandableDetailList.put("Area 3: Software Engineering and Programming Languages", software_and_programming);
         expandableDetailList.put("Area 4: Theory", theory);
@@ -77,11 +77,10 @@ public class ExpandableListDataItems {
         return expandableDetailList;
 
 
-
     }
 
 
-    public static HashMap<String, List<String>> getDataScienceReqsData(){
+    public static HashMap<String, List<String>> getDataScienceReqsData() {
         HashMap<String, List<String>> expandableDetailList = new HashMap<String, List<String>>();
 
         List<String> required = new ArrayList<String>();
@@ -115,8 +114,8 @@ public class ExpandableListDataItems {
         courses3.add("CMSC 434 (3 credits) Introduction to Human-Computer Interaction");
         courses3.add("CMSC 435 (3 credits) Software Engineering");
 
-        expandableDetailList.put("Required",required);
-        expandableDetailList.put("Choose one course from:",courses1);
+        expandableDetailList.put("Required", required);
+        expandableDetailList.put("Choose one course from:", courses1);
         expandableDetailList.put("Choose one course from: ", courses2);
         expandableDetailList.put("Choose two courses from: ", courses3);
 
@@ -124,7 +123,7 @@ public class ExpandableListDataItems {
     }
 
 
-    public static HashMap<String, List<String>> getCyberSecruityReqsData(){
+    public static HashMap<String, List<String>> getCyberSecruityReqsData() {
         HashMap<String, List<String>> expandableDetailList = new HashMap<String, List<String>>();
 
         List<String> required = new ArrayList<String>();
@@ -154,7 +153,7 @@ public class ExpandableListDataItems {
     }
 
 
-    public static HashMap<String, List<String>> getMachineLearningReqsData(){
+    public static HashMap<String, List<String>> getMachineLearningReqsData() {
         HashMap<String, List<String>> expandableDetailList = new HashMap<String, List<String>>();
 
         List<String> required = new ArrayList<String>();
@@ -182,11 +181,11 @@ public class ExpandableListDataItems {
         expandableDetailList.put("Choose two courses from:", courses);
         expandableDetailList.put("Upper Level Electives", upperlevelelectives);
 
-        return  expandableDetailList;
+        return expandableDetailList;
 
     }
 
-    public static HashMap<String, List<String>> getQuantumInformation(){
+    public static HashMap<String, List<String>> getQuantumInformation() {
         HashMap<String, List<String>> expandableDetailList = new HashMap<String, List<String>>();
 
         List<String> required = new ArrayList<String>();
@@ -236,7 +235,7 @@ public class ExpandableListDataItems {
         return expandableDetailList;
     }
 
-    public static HashMap<String, List<String>> getUpperLevel(){
+    public static HashMap<String, List<String>> getUpperLevel() {
         HashMap<String, List<String>> expandableDetailList = new HashMap<String, List<String>>();
 
         List<String> coursesCompleted = new ArrayList<String>();
@@ -244,5 +243,42 @@ public class ExpandableListDataItems {
         expandableDetailList.put("Upper Level Concentration Classes completed:", coursesCompleted);
 
         return expandableDetailList;
+    }
+
+    public static HashMap<String, List<String>> getGenEd(){
+        HashMap<String, List<String>> expandableDetailList = new HashMap<String, List<String>>();
+
+        List<String> fundamental = new ArrayList<String>();
+        fundamental.add("AW (3 credits) Academic Writing");
+        fundamental.add("PW (3 credits) Professional Writing");
+        fundamental.add("OC (3 credits) Oral Communication");
+
+        List<String>distStudies = new ArrayList<>();
+        distStudies.add("NL (4 credits) Natural Science with Lab");
+        distStudies.add("NS (3 credits) Natural Science");
+        distStudies.add("HS (3 credits) History and Social Sciences");
+        distStudies.add("HS (3 credits) History and Social Sciences");
+        distStudies.add("HU (3 credits) Humanities");
+        distStudies.add("HU (3 credits) Humanities");
+        distStudies.add("SP (3 credits) Scholarship in Practice");
+        distStudies.add("SP (3 credits) Scholarship in Practice");
+
+        List<String> I_Series = new ArrayList<>();
+        I_Series.add("IS (3 credits) I-Series");
+        I_Series.add("IS (3 credits) I-Series");
+
+
+
+        List<String> diversity = new ArrayList<>();
+        diversity.add("UP Understanding Plural Societies");
+        diversity.add("UP Understanding Plural Societies or CC Cultural Competence ");
+
+        expandableDetailList.put("Fundamental Studies", fundamental);
+        expandableDetailList.put("Distributive Studies", distStudies);
+        expandableDetailList.put("I-Series",I_Series);
+        expandableDetailList.put("Diversity", diversity);
+
+        return expandableDetailList;
+
     }
 }

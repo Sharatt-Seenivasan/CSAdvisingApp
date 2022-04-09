@@ -47,6 +47,14 @@ public class DegreeRequirementsActivity extends AppCompatActivity {
             }
         });
 
+        generalReqs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DegreeRequirementsActivity.this,GeneralEducationDegreeRequirements.class);
+                startActivity(intent);
+            }
+        });
+
 //        generalReqs.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
