@@ -23,7 +23,7 @@ public class DegreeRequirementsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_degree_requirements);
-        setTitle("University of Maryland");
+        setTitle("Degree Requirements");
         centerTitle();
 
         generalReqs = findViewById(R.id.generalRequirements);
@@ -38,6 +38,22 @@ public class DegreeRequirementsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        trackSpecificReqs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(DegreeRequirementsActivity.this,SelectTrackActivity.class);
+                startActivity(intent);
+            }
+        });
+
+//        generalReqs.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(DegreeRequirementsActivity.this,GeneralCourseworkDegreeRequirements.class);
+//                startActivity(intent);
+//            }
+//        });
 
     }
 
