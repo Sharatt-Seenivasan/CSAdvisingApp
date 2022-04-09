@@ -1,24 +1,21 @@
 package net.cmsc_434.cs_advising_app;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatTextView;
 
 import android.os.Bundle;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.content.Intent;
 import android.view.View;
 import android.widget.Toolbar;
 
 import java.util.ArrayList;
 
-public class LTSCTransferRequirements extends AppCompatActivity {
+public class InternalTransferRequirements extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ltsc_transfer_requirements);
+        setContentView(R.layout.activity_internal_transfer_requirements);
 
         setTitle("Internal Transfer Requirements");
         centerTitle();
