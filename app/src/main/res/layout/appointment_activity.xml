@@ -4,118 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AppointmentActivity">
-
-    <CheckBox
-        android:id="@+id/sundayBox"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/saturdayBox"
-        app:layout_constraintStart_toEndOf="@+id/saturdayBox"
-        app:layout_constraintTop_toTopOf="@+id/saturdayBox" />
-
-    <CheckBox
-        android:id="@+id/fridayBox"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/thrusdayBox"
-        app:layout_constraintStart_toEndOf="@+id/thrusdayBox"
-        app:layout_constraintTop_toTopOf="@+id/thrusdayBox" />
-
-    <CheckBox
-        android:id="@+id/saturdayBox"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/fridayBox"
-        app:layout_constraintStart_toEndOf="@+id/fridayBox"
-        app:layout_constraintTop_toTopOf="@+id/fridayBox" />
-
-    <CheckBox
-        android:id="@+id/thrusdayBox"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/wednesdayBox"
-        app:layout_constraintStart_toEndOf="@+id/wednesdayBox"
-        app:layout_constraintTop_toTopOf="@+id/wednesdayBox" />
-
-    <CheckBox
-        android:id="@+id/wednesdayBox"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/tuesdayBox"
-        app:layout_constraintStart_toEndOf="@+id/tuesdayBox"
-        app:layout_constraintTop_toTopOf="@+id/tuesdayBox" />
-
-    <CheckBox
-        android:id="@+id/tuesdayBox"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/mondayBox"
-        app:layout_constraintStart_toEndOf="@+id/mondayBox"
-        app:layout_constraintTop_toTopOf="@+id/mondayBox" />
-
-    <CheckBox
-        android:id="@+id/mondayBox"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="60dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toStartOf="@+id/textDays" />
+    tools:context=".AdvisingAppointment">
 
     <TextView
-        android:id="@+id/textWednesday"
+        android:id="@+id/apptDay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/day_wednesday"
+        android:layout_marginTop="10dp"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/textTuesday"
-        app:layout_constraintEnd_toEndOf="@+id/wednesdayBox"
-        app:layout_constraintStart_toStartOf="@+id/wednesdayBox"
-        app:layout_constraintTop_toTopOf="@+id/textTuesday" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/dayButton"
+        app:layout_constraintStart_toStartOf="@+id/dayButton"
+        app:layout_constraintTop_toBottomOf="@+id/selectedDay" />
 
     <TextView
-        android:id="@+id/textThrusday"
+        android:id="@+id/selectedDay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/day_thursday"
+        android:layout_marginTop="10dp"
+        android:text="@string/selected_day"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/textWednesday"
-        app:layout_constraintEnd_toEndOf="@+id/thrusdayBox"
-        app:layout_constraintStart_toStartOf="@+id/thrusdayBox"
-        app:layout_constraintTop_toTopOf="@+id/textWednesday" />
-
-    <TextView
-        android:id="@+id/textTuesday"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/day_tuesday"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/textMonday"
-        app:layout_constraintEnd_toEndOf="@+id/tuesdayBox"
-        app:layout_constraintStart_toStartOf="@+id/tuesdayBox"
-        app:layout_constraintTop_toTopOf="@+id/textMonday" />
-
-    <TimePicker
-        android:id="@+id/timePicker1"
-        android:layout_width="463dp"
-        android:layout_height="310dp"
-        android:headerBackground="@color/umd_red"
-        android:numbersSelectorColor="@color/umd_red"
-        android:scaleX=".5"
-        android:scaleY=".5"
-        app:layout_constraintBottom_toTopOf="@+id/textDays"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTime" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/dayButton"
+        app:layout_constraintStart_toStartOf="@+id/dayButton"
+        app:layout_constraintTop_toBottomOf="@+id/dayButton" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/requestButton"
         android:layout_width="298dp"
         android:layout_height="53dp"
         android:layout_marginEnd="20dp"
@@ -155,69 +70,56 @@
         android:text="@string/advising_time"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textTitle"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <TextView
         android:id="@+id/textDays"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:text="@string/advising_day"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textThrusday"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/textTitle"
+        app:layout_constraintTop_toTopOf="@+id/textTime" />
 
-    <TextView
-        android:id="@+id/textMonday"
+    <Button
+        android:id="@+id/dayButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="@string/day_monday"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/mondayBox"
-        app:layout_constraintEnd_toEndOf="@+id/mondayBox"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/mondayBox"
-        app:layout_constraintTop_toTopOf="@+id/mondayBox"
-        app:layout_constraintVertical_bias="1.0" />
+        android:layout_marginTop="10dp"
+        android:text="@string/select_day"
+        app:layout_constraintEnd_toEndOf="@+id/textDays"
+        app:layout_constraintStart_toStartOf="@+id/textDays"
+        app:layout_constraintTop_toBottomOf="@+id/textDays" />
 
-    <TextView
-        android:id="@+id/textFriday"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/day_friday"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/textThrusday"
-        app:layout_constraintEnd_toEndOf="@+id/fridayBox"
-        app:layout_constraintStart_toStartOf="@+id/fridayBox"
-        app:layout_constraintTop_toTopOf="@+id/textThrusday" />
+    <View
+        android:id="@+id/outline"
+        android:layout_width="165dp"
+        android:layout_height="55dp"
+        android:background="@color/umd_red"
+        app:layout_constraintBottom_toBottomOf="@+id/timeSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/timeSpinner"
+        app:layout_constraintStart_toStartOf="@+id/timeSpinner"
+        app:layout_constraintTop_toTopOf="@+id/timeSpinner" />
 
-    <TextView
-        android:id="@+id/textSaturday"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/day_saturday"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/textFriday"
-        app:layout_constraintEnd_toEndOf="@+id/saturdayBox"
-        app:layout_constraintStart_toStartOf="@+id/saturdayBox"
-        app:layout_constraintTop_toTopOf="@+id/textFriday" />
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/timeSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/timeSpinner"
+        app:layout_constraintStart_toStartOf="@+id/timeSpinner"
+        app:layout_constraintTop_toTopOf="@+id/timeSpinner" />
 
-    <TextView
-        android:id="@+id/textSunday"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/day_sunday"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/textSaturday"
-        app:layout_constraintEnd_toEndOf="@+id/sundayBox"
-        app:layout_constraintStart_toStartOf="@+id/sundayBox"
-        app:layout_constraintTop_toTopOf="@+id/textSaturday" />
+    <Spinner
+        android:id="@+id/timeSpinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dayButton"
+        app:layout_constraintEnd_toEndOf="@+id/textTime"
+        app:layout_constraintStart_toStartOf="@+id/textTime"
+        app:layout_constraintTop_toTopOf="@+id/dayButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

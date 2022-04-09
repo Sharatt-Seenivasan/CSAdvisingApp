@@ -25,6 +25,9 @@
     <string name="advising_day">Preferred Day(s)</string>
     <string name="advising_appointment">Request Appointment</string>
     <string name="advising_select">Select Time</string>
+    <string name="select_day">Select Day</string>
+    <string name="selected_time">Selected Time</string>
+    <string name="selected_day">Selected Day</string>
 
     <string name="day_monday">Mon</string>
     <string name="day_tuesday">Tue</string>
