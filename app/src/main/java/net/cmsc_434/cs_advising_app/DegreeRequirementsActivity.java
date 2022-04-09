@@ -18,6 +18,7 @@ public class DegreeRequirementsActivity extends AppCompatActivity {
     public Button lowerLeverlReqs;
     public Button upperLevelConcentrationReqs;
     public Button trackSpecificReqs;
+    public Button homeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class DegreeRequirementsActivity extends AppCompatActivity {
         upperLevelConcentrationReqs = findViewById(R.id.upperLevelConcentrationRequirements);
         lowerLeverlReqs = (Button)findViewById(R.id.lowerLevelRequirements);
         trackSpecificReqs = findViewById(R.id.trackSpecificRequirements);
+        homeButton = findViewById(R.id.goHome1);
 
         lowerLeverlReqs.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,10 +57,19 @@ public class DegreeRequirementsActivity extends AppCompatActivity {
             }
         });
 
+
         upperLevelConcentrationReqs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(DegreeRequirementsActivity.this,UpperLevelConcentrationRequirements.class);
+                startActivity(intent);
+            }
+        });
+
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DegreeRequirementsActivity.this,MainActivity.class);
                 startActivity(intent);
             }
         });
