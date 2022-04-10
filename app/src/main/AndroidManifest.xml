@@ -18,6 +18,12 @@
         android:theme="@style/Theme.CSAdvisingApp">
         <activity android:name=".FourYearPlanActivity" />
         <activity
+            android:name=".InternalTransferRequirements"
+            android:exported="false"/>
+        <activity
+            android:name=".AdvisingAppointment"
+            android:exported="false"/>
+        <activity
             android:name=".SelectTrackActivity"
             android:exported="false" />
         <activity
