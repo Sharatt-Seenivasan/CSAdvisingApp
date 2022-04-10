@@ -21,7 +21,7 @@ public class DegreeRequirementsActivity extends AppCompatActivity {
     public Button homeButton;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_degree_requirements);
         setTitle("Degree Requirements");

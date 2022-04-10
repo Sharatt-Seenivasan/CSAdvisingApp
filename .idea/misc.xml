@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Pranav/CSAdvisingApp-master/CSAdvisingApp-master/app/src/main/res/layout-land/activity_degree_requirements.xml" value="0.12944983818770225" />
+        <entry key="..\:/Users/Pranav/CSAdvisingApp-master/CSAdvisingApp-master/app/src/main/res/layout/activity_degree_requirements.xml" value="0.25" />
+        <entry key="..\:/Users/Pranav/CSAdvisingApp-master/CSAdvisingApp-master/app/src/main/res/layout/activity_four_year_plan.xml" value="0.2" />
+        <entry key="..\:/Users/Pranav/CSAdvisingApp-master/CSAdvisingApp-master/app/src/main/res/layout/activity_general_coursework_degree_requirements.xml" value="0.25" />
+        <entry key="..\:/Users/Pranav/CSAdvisingApp-master/CSAdvisingApp-master/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout-land/activity_degree_requirements.xml" value="0.14462081128747795" />
         <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/activity_cyber_security_coursework_degree_requirements.xml" value="0.1" />
         <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/activity_data_science_coursework_degree_requirements.xml" value="0.1" />
