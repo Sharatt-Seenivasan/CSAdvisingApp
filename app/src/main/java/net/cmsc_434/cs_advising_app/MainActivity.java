@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     public Button fourYearPlanButton;
     public Button degreeRequirementButton;
     public Button advisingAppointmentsButton;
+    public Button propLTSCstudentsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         fourYearPlanButton = (Button)findViewById(R.id.button7);
         degreeRequirementButton = (Button)findViewById(R.id.button10);
         advisingAppointmentsButton = (Button)findViewById(R.id.button8);
+        propLTSCstudentsButton = (Button)findViewById(R.id.button9);
 
         fourYearPlanButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +52,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(MainActivity.this,AdvisingAppointment.class);
+                startActivity(intent);
+            }
+        });
+
+        propLTSCstudentsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,InternalTransferRequirements.class);
                 startActivity(intent);
             }
         });
