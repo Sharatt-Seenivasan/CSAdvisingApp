@@ -3,9 +3,11 @@ package net.cmsc_434.cs_advising_app;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatTextView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
@@ -23,6 +25,10 @@ public class MachineLearningCourseworkDegreeRequirements extends AppCompatActivi
     List<String> expandableTitleList;
     HashMap<String, List<String>> expandableDetailList;
 
+    Button infoButton;
+
+    public boolean visitedBefore = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +36,18 @@ public class MachineLearningCourseworkDegreeRequirements extends AppCompatActivi
 
         setTitle("Machine Learning Track");
         centerTitle();
+
+        infoButton = (Button)findViewById(R.id.machineLearningInfoButton);
+
+        infoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(MachineLearningCourseworkDegreeRequirements.this,InfoPopUpWindowActivity.class);
+                intent.putExtra("activity","machineLearningTrack");
+                startActivity(intent);
+            }
+        });
+
 
         expandableListViewExample = (ExpandableListView) findViewById(R.id.machineLearningList);
         expandableDetailList = ExpandableListDataItems.getMachineLearningReqsData();
@@ -71,6 +89,13 @@ public class MachineLearningCourseworkDegreeRequirements extends AppCompatActivi
                 return false;
             }
         });
+
+        if(!visitedBefore){
+            Intent intent = new Intent(MachineLearningCourseworkDegreeRequirements.this,InfoPopUpWindowActivity.class);
+            intent.putExtra("activity","machineLearningTrack");
+            startActivity(intent);
+            visitedBefore = true;
+        }
     }
 
     private void centerTitle() {
@@ -99,4 +124,6 @@ public class MachineLearningCourseworkDegreeRequirements extends AppCompatActivi
             }
         }
     }
+
+
 }

@@ -3,9 +3,11 @@ package net.cmsc_434.cs_advising_app;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatTextView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
@@ -22,12 +24,26 @@ public class LowerLevelCourseworkDegreeRequirementsActivity extends AppCompatAct
     List<String> expandableTitleList;
     HashMap<String, List<String>> expandableDetailList;
 
+    Button infoButton;
+    public boolean visitedBefore = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lower_level_coursework_degree_requirements);
         setTitle("Lower Level Coursework");
         centerTitle();
+
+        infoButton = (Button)findViewById(R.id.lowerLevelButton);
+
+        infoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(LowerLevelCourseworkDegreeRequirementsActivity.this,InfoPopUpWindowActivity.class);
+                intent.putExtra("activity","lowerLevelRequirements");
+                startActivity(intent);
+            }
+        });
 
         expandableListViewExample = (ExpandableListView) findViewById(R.id.lowerLevelList);
         expandableDetailList = ExpandableListDataItems.getLLRData();
@@ -67,6 +83,13 @@ public class LowerLevelCourseworkDegreeRequirementsActivity extends AppCompatAct
                 return false;
             }
         });
+
+        if(!visitedBefore){
+            Intent intent = new Intent(LowerLevelCourseworkDegreeRequirementsActivity.this,InfoPopUpWindowActivity.class);
+            intent.putExtra("activity","lowerLevelRequirements");
+            startActivity(intent);
+            visitedBefore = true;
+        }
     }
 
     private void centerTitle() {

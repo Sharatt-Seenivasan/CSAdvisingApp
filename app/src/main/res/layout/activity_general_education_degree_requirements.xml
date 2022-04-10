@@ -12,6 +12,29 @@
         android:layout_height="match_parent"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="0.5dp"
-        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" />
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:translationY="100dp" />
+
+    <Button
+        android:id="@+id/generalEdInfoButton"
+        android:layout_width="255dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1009dp"
+        android:layout_marginTop="15dp"
+        android:text="Info"
+        android:textSize="40dp" />
+
+<!--    <Button-->
+<!--        android:id="@+id/goHome"-->
+<!--        android:layout_width="213dp"-->
+<!--        android:layout_height="158dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="43dp"-->
+<!--        android:layout_marginBottom="34dp"-->
+<!--        android:text="Main Menu"-->
+<!--        android:textSize="40dp" />-->
 
 </RelativeLayout>

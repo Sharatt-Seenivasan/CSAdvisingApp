@@ -22,4 +22,9 @@
     <style name="Theme.CSAdvisingApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.CSAdvisingApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name = "Theme.CSAdvisingApp.infoPopUpWindowTheme">
+        <item name = "android:windowIsTranslucent">true</item>
+        <item name = "android:windowCloseOnTouchOutside">true</item>
+    </style>
 </resources>

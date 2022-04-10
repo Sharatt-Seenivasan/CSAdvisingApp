@@ -3,9 +3,11 @@ package net.cmsc_434.cs_advising_app;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatTextView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
@@ -23,6 +25,10 @@ public class GeneralCourseworkDegreeRequirements extends AppCompatActivity {
     List<String> expandableTitleList;
     HashMap<String, List<String>> expandableDetailList;
 
+    Button infoButton;
+
+    public boolean visitedBefore = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +36,18 @@ public class GeneralCourseworkDegreeRequirements extends AppCompatActivity {
 
         setTitle("General Track");
         centerTitle();
+
+        infoButton = (Button)findViewById(R.id.generalTrackInfoButton);
+
+        infoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(GeneralCourseworkDegreeRequirements.this,InfoPopUpWindowActivity.class);
+                intent.putExtra("activity","generalTrack");
+                startActivity(intent);
+            }
+        });
+
 
         expandableListViewExample = (ExpandableListView) findViewById(R.id.generalList);
         expandableDetailList = ExpandableListDataItems.getGRData();
@@ -71,6 +89,13 @@ public class GeneralCourseworkDegreeRequirements extends AppCompatActivity {
                 return false;
             }
         });
+
+        if(!visitedBefore){
+            Intent intent = new Intent(GeneralCourseworkDegreeRequirements.this,InfoPopUpWindowActivity.class);
+            intent.putExtra("activity","generalTrack");
+            startActivity(intent);
+            visitedBefore = true;
+        }
 
     }
 

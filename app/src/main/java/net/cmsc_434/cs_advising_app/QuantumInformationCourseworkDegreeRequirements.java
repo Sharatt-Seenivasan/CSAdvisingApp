@@ -3,9 +3,11 @@ package net.cmsc_434.cs_advising_app;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatTextView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.Toast;
@@ -23,6 +25,10 @@ public class QuantumInformationCourseworkDegreeRequirements extends AppCompatAct
     List<String> expandableTitleList;
     HashMap<String, List<String>> expandableDetailList;
 
+    Button infoButton;
+
+    public boolean visitedBefore = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +36,17 @@ public class QuantumInformationCourseworkDegreeRequirements extends AppCompatAct
 
         setTitle("Quantum Information Track");
         centerTitle();
+
+        infoButton = (Button)findViewById(R.id.quantumInfoTrackInfoButton);
+
+        infoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(QuantumInformationCourseworkDegreeRequirements.this,InfoPopUpWindowActivity.class);
+                intent.putExtra("activity","quantumInformationTrack");
+                startActivity(intent);
+            }
+        });
 
         expandableListViewExample = (ExpandableListView) findViewById(R.id.quantumInfoList);
         expandableDetailList = ExpandableListDataItems.getQuantumInformation();
@@ -71,6 +88,13 @@ public class QuantumInformationCourseworkDegreeRequirements extends AppCompatAct
                 return false;
             }
         });
+
+        if(!visitedBefore){
+            Intent intent = new Intent(QuantumInformationCourseworkDegreeRequirements.this,InfoPopUpWindowActivity.class);
+            intent.putExtra("activity","quantumInformationTrack");
+            startActivity(intent);
+            visitedBefore = true;
+        }
     }
 
     private void centerTitle() {

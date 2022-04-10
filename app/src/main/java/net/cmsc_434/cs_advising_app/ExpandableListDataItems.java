@@ -68,11 +68,25 @@ public class ExpandableListDataItems {
         List<String> numericalAnalysis = new ArrayList<>();
         numericalAnalysis.add("CMSC 460 (3 credits) Computational Methods  or CMSC 466 (3 credits) Introduction to Numerical Analysis");
 
+
+        List<String> upperLevelElectives = new ArrayList<>();
+        upperLevelElectives.add("CMSC 320 (3 credits) Introduction to Data Science");
+        upperLevelElectives.add("CMSC 335 (3 credits) Web Application Development with JavaScript");
+        upperLevelElectives.add("CMSC 389N (3 credits) Special Topics in Computer Science; Introduction to PHP & JavaScript");
+        upperLevelElectives.add("CMSC 425 (3 credits) Game Programming");
+        upperLevelElectives.add("CMSC 472 (3 credits) Introduction to Deep Learning");
+        upperLevelElectives.add("CMSC 473 (3 credits) Capstone in Machine Learning");
+        upperLevelElectives.add("CMSC 475 (3 credits) Combinatorics and Game Theory");
+        upperLevelElectives.add("CMSC 498A (1 - 3 credits) Selected Topics in Computer Science: Independent Study");
+        upperLevelElectives.add("CMSC 499A (1 - 3 credits) Independent Undergraduate Research");
+
+
         expandableDetailList.put("Area 1: Systems", systems);
         expandableDetailList.put("Area 2: Information Processing", infoProcessing);
         expandableDetailList.put("Area 3: Software Engineering and Programming Languages", software_and_programming);
         expandableDetailList.put("Area 4: Theory", theory);
         expandableDetailList.put("Area 5: Numerical Analysis", numericalAnalysis);
+        expandableDetailList.put("CMSC Upper Level Electives", upperLevelElectives);
 
         return expandableDetailList;
 
@@ -235,12 +249,12 @@ public class ExpandableListDataItems {
         return expandableDetailList;
     }
 
-    public static HashMap<String, List<String>> getUpperLevel() {
+    public static HashMap<String, List<String>> getUpperLevelConcentration() {
         HashMap<String, List<String>> expandableDetailList = new HashMap<String, List<String>>();
 
         List<String> coursesCompleted = new ArrayList<String>();
 
-        expandableDetailList.put("Upper Level Concentration Classes completed:", coursesCompleted);
+        expandableDetailList.put("ULC Classes completed:", coursesCompleted);
 
         return expandableDetailList;
     }
