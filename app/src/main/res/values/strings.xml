@@ -20,9 +20,20 @@
     <string name="time_am">AM</string>
     <string name="time_pm">PM</string>
 
+    <string name="four_year_title">Four Year Plan</string>
+    <string name="sem1">First Semester</string>
+    <string name="sem2">Second Semester</string>
+    <string name="sem3">Third Semester</string>
+    <string name="sem4">Fourth Semester</string>
+    <string name="sem5">Fifth Semester</string>
+    <string name="sem6">Sixth Semester</string>
+    <string name="sem7">Seventh Semester</string>
+    <string name="sem8">Eighth Semester</string>
+
+
     <string name="advising_title">Advising</string>
-    <string name="advising_time">Preferred Time(s)</string>
-    <string name="advising_day">Preferred Day(s)</string>
+    <string name="advising_time">Preferred Time</string>
+    <string name="advising_day">Preferred Day</string>
     <string name="advising_appointment">Request Appointment</string>
     <string name="advising_select">Select Time</string>
     <string name="select_day">Select Day</string>
@@ -78,5 +89,9 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <string name="internal_gateway_header">Internal Transfer Students</string>
-    <string name="click_to_add_class">Click to add class</string>
+    <string name="click_to_add_class">CLICK TO ADD CLASS</string>
+    <string name="zero_credits">Credits: 0</string>
+    <string name="view_requirements">View Degree Requirements</string>
+
+
 </resources>
