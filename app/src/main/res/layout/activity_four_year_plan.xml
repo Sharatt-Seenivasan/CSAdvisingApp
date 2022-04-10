@@ -12,7 +12,7 @@
         android:layout_height="100dp"
         android:layout_marginStart="356dp"
         android:layout_marginTop="24dp"
-        android:text="Four Year Plan"
+        android:text="@string/four_year_title"
         android:textAlignment="center"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="60sp"
@@ -20,1005 +20,1058 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TableLayout
-        android:id="@+id/firstSemester"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        app:layout_constraintEnd_toStartOf="@id/fourYearPlanTitle"
-        app:layout_constraintTop_toBottomOf="@id/fourYearPlanTitle">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:background="@android:color/darker_gray"
-                android:gravity="center"
-                android:text="First Semester"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/addClass"
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/firstSemesterCredits"
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/darker_gray"
-                android:text="Credits: 0"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </TableRow>
-    </TableLayout>
-
-    <TableLayout
-        android:id="@+id/secondSemester"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        app:layout_constraintStart_toEndOf="@id/firstSemester"
-        app:layout_constraintTop_toBottomOf="@id/fourYearPlanTitle">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:background="@android:color/darker_gray"
-                android:gravity="center"
-                android:text="Second Semester"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/secondSemesterCredits"
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/darker_gray"
-                android:text="Credits: 0"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </TableRow>
-    </TableLayout>
-
-    <TableLayout
-        android:id="@+id/thirdSemester"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        app:layout_constraintStart_toEndOf="@id/secondSemester"
-        app:layout_constraintTop_toBottomOf="@id/fourYearPlanTitle">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:background="@android:color/darker_gray"
-                android:gravity="center"
-                android:text="Third Semester"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/thirdSemesterCredits"
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/darker_gray"
-                android:text="Credits: 0"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </TableRow>
-    </TableLayout>
-
-    <TableLayout
-        android:id="@+id/fourthSemester"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        app:layout_constraintStart_toEndOf="@id/thirdSemester"
-        app:layout_constraintTop_toBottomOf="@id/fourYearPlanTitle">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:background="@android:color/darker_gray"
-                android:gravity="center"
-                android:text="Fourth Semester"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/fourthSemesterCredits"
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/darker_gray"
-                android:text="Credits: 0"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </TableRow>
-    </TableLayout>
-
-    <TableLayout
-        android:id="@+id/fifthSemester"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        app:layout_constraintStart_toStartOf="@id/firstSemester"
-        app:layout_constraintTop_toBottomOf="@id/firstSemester">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:background="@android:color/darker_gray"
-                android:gravity="center"
-                android:text="Fifth Semester"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/fifthSemesterCredits"
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/darker_gray"
-                android:text="Credits: 0"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </TableRow>
-    </TableLayout>
-
-    <TableLayout
-        android:id="@+id/sixthSemester"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        app:layout_constraintStart_toStartOf="@id/secondSemester"
-        app:layout_constraintTop_toBottomOf="@id/secondSemester">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:background="@android:color/darker_gray"
-                android:gravity="center"
-                android:text="Sixth Semester"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/sixthSemesterCredits"
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/darker_gray"
-                android:text="Credits: 0"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </TableRow>
-    </TableLayout>
-
-    <TableLayout
-        android:id="@+id/seventhSemester"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        app:layout_constraintStart_toStartOf="@id/thirdSemester"
-        app:layout_constraintTop_toBottomOf="@id/thirdSemester">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:background="@android:color/darker_gray"
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:text="Seventh Semester"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/seventhSemesterCredits"
-                android:background="@android:color/darker_gray"
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:text="Credits: 0"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </TableRow>
-    </TableLayout>
-
-    <TableLayout
-        android:id="@+id/eighthSemester"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        app:layout_constraintStart_toStartOf="@id/fourthSemester"
-        app:layout_constraintTop_toBottomOf="@id/fourthSemester">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:background="@android:color/darker_gray"
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:text="Eighth Semester"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:background="@android:color/lighter_gray"
-                android:text="@string/click_to_add_class"
-                android:textColor="@android:color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/eighthSemesterCredits"
-                android:background="@android:color/darker_gray"
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:text="Credits: 0"
-                android:textColor="@android:color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-        </TableRow>
-    </TableLayout>
-
-    <TextView
-        android:id="@+id/totalCredits"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:background="@android:color/darker_gray"
-        android:backgroundTint="@android:color/darker_gray"
-        android:text="Total Credits: 0"
-        android:textColor="@android:color/black"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@id/fifthSemester"
-        app:layout_constraintTop_toBottomOf="@id/fifthSemester" />
-
-    <Button
-        android:id="@+id/goDegReqFromFourYearPlan"
-        android:layout_width="350dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="20dp"
-        android:background="@android:color/darker_gray"
-        android:text="View Degree Requirements"
-        android:textColor="@android:color/black"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@id/fifthSemester"
-        app:layout_constraintTop_toBottomOf="@id/totalCredits" />
-
-    <Button
-        android:id="@+id/goHomeFromFourYearPlan"
-        android:layout_width="194dp"
-        android:layout_height="134dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="16dp"
-        android:text="Main Menu"
-        android:textSize="40dp"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourYearPlanTitle"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TableLayout
+                    android:id="@+id/firstSemester"
+                    android:layout_width="250dp"
+                    android:layout_height="330dp"
+                    android:layout_weight="1">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/darker_gray"
+                            android:gravity="center"
+                            android:text="@string/sem1"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass1.1"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass1.2"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass1.3"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass1.4"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass1.5"
+                            android:layout_width="250dp"
+                            android:layout_height="050dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/firstSemesterCredits"
+                            android:layout_width="250dp"
+                            android:layout_height="30dp"
+                            android:background="@android:color/darker_gray"
+                            android:text="@string/zero_credits"
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/secondSemester"
+                    android:layout_width="250dp"
+                    android:layout_height="330dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/darker_gray"
+                            android:gravity="center"
+                            android:text="@string/sem2"
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass2.1"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass2.2"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass2.3"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass2.4"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass2.5"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/secondSemesterCredits"
+                            android:layout_width="250dp"
+                            android:layout_height="30dp"
+                            android:background="@android:color/darker_gray"
+                            android:text="@string/zero_credits"
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/thirdSemester"
+                    android:layout_width="250dp"
+                    android:layout_height="330dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/darker_gray"
+                            android:gravity="center"
+                            android:text="@string/sem3"
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass3.1"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass3.2"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass3.3"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass3.4"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass3.5"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/thirdSemesterCredits"
+                            android:layout_width="250dp"
+                            android:layout_height="30dp"
+                            android:background="@android:color/darker_gray"
+                            android:text="@string/zero_credits"
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/fourthSemester"
+                    android:layout_width="250dp"
+                    android:layout_height="330dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/darker_gray"
+                            android:gravity="center"
+                            android:text="@string/sem4"
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass4.1"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass4.2"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass4.3"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass4.4"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass4.5"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/fourthSemesterCredits"
+                            android:layout_width="250dp"
+                            android:layout_height="30dp"
+                            android:background="@android:color/darker_gray"
+                            android:text="@string/zero_credits"
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TableLayout
+                    android:id="@+id/fifthSemester"
+                    android:layout_width="250dp"
+                    android:layout_height="330dp"
+                    android:layout_weight="1">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/darker_gray"
+                            android:gravity="center"
+                            android:text="@string/sem5"
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass5.1"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass5.2"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass5.3"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass5.4"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass5.5"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/fifthSemesterCredits"
+                            android:layout_width="250dp"
+                            android:layout_height="30dp"
+                            android:background="@android:color/darker_gray"
+                            android:text="@string/zero_credits"
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/sixthSemester"
+                    android:layout_width="250dp"
+                    android:layout_height="330dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/darker_gray"
+                            android:gravity="center"
+                            android:text="@string/sem6"
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass6.1"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass6.2"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass6.3"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass6.4"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass6.5"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/sixthSemesterCredits"
+                            android:layout_width="250dp"
+                            android:layout_height="30dp"
+                            android:background="@android:color/darker_gray"
+                            android:text="@string/zero_credits"
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/seventhSemester"
+                    android:layout_width="250dp"
+                    android:layout_height="330dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/darker_gray"
+                            android:gravity="center"
+                            android:text="@string/sem7"
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass7.1"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass7.2"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass7.3"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass7.4"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass7.5"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/seventhSemesterCredits"
+                            android:layout_width="250dp"
+                            android:layout_height="30dp"
+                            android:background="@android:color/darker_gray"
+                            android:text="@string/zero_credits"
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/eighthSemester"
+                    android:layout_width="250dp"
+                    android:layout_height="330dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/darker_gray"
+                            android:gravity="center"
+                            android:text="@string/sem8"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass8.1"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass8.2"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass8.3"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass8.4"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/addClass8.5"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/lighter_gray"
+                            android:text="@string/click_to_add_class"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/eighthSemesterCredits"
+                            android:layout_width="250dp"
+                            android:layout_height="30dp"
+                            android:background="@android:color/darker_gray"
+                            android:text="@string/zero_credits"
+                            android:textColor="@android:color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/totalCredits"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="@android:color/darker_gray"
+                android:backgroundTint="@android:color/darker_gray"
+                android:text="@string/zero_credits"
+                android:textColor="@android:color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/goDegReqFromFourYearPlan"
+                android:layout_width="350dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/darker_gray"
+                android:text="@string/view_requirements"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
