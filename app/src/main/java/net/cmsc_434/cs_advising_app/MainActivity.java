@@ -14,6 +14,7 @@ import android.widget.Toolbar;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    public Button fourYearPlanButton;
     public Button degreeRequirementButton;
     public Button advisingAppointmentsButton;
 
@@ -26,11 +27,16 @@ public class MainActivity extends AppCompatActivity {
         setTitle("University of Maryland CS Advising App");
         centerTitle();
 
-
-
+        fourYearPlanButton = (Button)findViewById(R.id.button7);
         degreeRequirementButton = (Button)findViewById(R.id.button10);
         advisingAppointmentsButton = (Button)findViewById(R.id.button8);
 
+        fourYearPlanButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, FourYearPlanActivity.class));
+            }
+        });
 
         degreeRequirementButton.setOnClickListener(new View.OnClickListener() {
             @Override
