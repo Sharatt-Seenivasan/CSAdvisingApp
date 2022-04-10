@@ -53,7 +53,7 @@ public class AdvisingAppointment extends AppCompatActivity implements
         allTimes.add("04:00 PM");
         allTimes.add("04:30 PM");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.appointment_activity);
 
         //get system clock time
         Calendar now = Calendar.getInstance();
