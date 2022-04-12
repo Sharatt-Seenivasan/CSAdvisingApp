@@ -37,7 +37,7 @@ public class InternalTransferRequirements extends AppCompatActivity {
         centerTitle();
 
         expandableListViewExample = (ExpandableListView) findViewById(R.id.gatewayRequirementsList);
-        expandableDetailList = ExpandableListDataItems.getLLRData();
+        expandableDetailList = ExpandableListDataItems.getGatewayRequirements();
         expandableTitleList = new ArrayList<String>(expandableDetailList.keySet());
         expandableListAdapter = new CustomizedExpandableListAdapter(this, expandableTitleList, expandableDetailList);
         expandableListViewExample.setAdapter(expandableListAdapter);

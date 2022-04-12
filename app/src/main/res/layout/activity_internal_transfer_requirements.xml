@@ -11,7 +11,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="TextView"
         android:textAlignment="center"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="60sp"
@@ -25,7 +24,8 @@
         android:id="@+id/applicationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="448dp"
+        android:layout_marginTop="399dp"
+        android:layout_marginBottom="32dp"
         android:width="600dp"
         android:height="120dp"
         android:background="@android:color/darker_gray"
@@ -36,14 +36,13 @@
         app:layout_constraintBottom_toTopOf="@id/internalTo4YearButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/gatewayRequirementsList"
-        app:layout_constraintVertical_bias="0.422" />
+        app:layout_constraintTop_toBottomOf="@+id/gatewayRequirementsList" />
 
     <ExpandableListView
         android:id="@+id/gatewayRequirementsList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="92dp"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="0.5dp"
         android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
@@ -58,7 +57,7 @@
         android:id="@+id/internalTo4YearButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="168dp"
+        android:layout_marginBottom="40dp"
         android:width="600dp"
         android:height="120dp"
         android:background="@android:color/darker_gray"
