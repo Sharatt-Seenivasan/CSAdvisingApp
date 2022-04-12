@@ -23,7 +23,8 @@
             android:name=".InfoPopUpWindowActivity"
             android:exported="false"
             android:theme="@style/Theme.CSAdvisingApp.infoPopUpWindowTheme" />
-        <activity android:name=".FourYearPlanActivity" />
+        <activity android:name=".FourYearPlanActivity"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".InternalTransferRequirements"
             android:exported="false" />

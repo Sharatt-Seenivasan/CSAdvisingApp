@@ -90,11 +90,7 @@
 
     <string name="internal_gateway_header">Internal Transfer Requirements</string>
 
-    <string name="click_to_add_class">CLICK TO ADD CLASS</string>
+    <string name="click_to_add_class">HOLD TO ADD CLASS</string>
     <string name="zero_credits">Credits: 0</string>
     <string name="view_requirements">View Degree Requirements</string>
-
-    <string name = "degreeReqsColorLegend"><b>Legend:</b>\n<font color = '#d6d6d6'>Gray</font> - Not on 4-Year Plan\n<font color = '#F7F14A'>Yellow</font> - On 4-Year Plan but not completed\n<font color = '#3DDC84'>Green</font> - On 4-Year Plan and completed</string>
-
-
 </resources>
