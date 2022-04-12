@@ -26,7 +26,6 @@ public class InternalTransferRequirements extends AppCompatActivity {
 
     Button internalTo4YearButton;
     Button applicationButton;
-    public boolean visitedBefore = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,22 +42,6 @@ public class InternalTransferRequirements extends AppCompatActivity {
         expandableListViewExample.setAdapter(expandableListAdapter);
         internalTo4YearButton = (Button)findViewById(R.id.internalTo4YearButton);
         applicationButton = (Button)findViewById(R.id.applicationButton);
-
-        // This method is called when the group is expanded
-        expandableListViewExample.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
-            @Override
-            public void onGroupExpand(int groupPosition) {
-                Toast.makeText(getApplicationContext(), expandableTitleList.get(groupPosition) + " List Expanded.", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        // This method is called when the group is collapsed
-        expandableListViewExample.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
-            @Override
-            public void onGroupCollapse(int groupPosition) {
-                Toast.makeText(getApplicationContext(), expandableTitleList.get(groupPosition) + " List Collapsed.", Toast.LENGTH_SHORT).show();
-            }
-        });
 
         // This method is called when the child in any group is clicked
         // via a toast method, it is shown to display the selected child item as a sample
@@ -77,13 +60,6 @@ public class InternalTransferRequirements extends AppCompatActivity {
             }
         });
 
-        if(!visitedBefore){
-            Intent intent = new Intent(InternalTransferRequirements.this,InfoPopUpWindowActivity.class);
-            intent.putExtra("activity","gatewayRequirements");
-            startActivity(intent);
-            visitedBefore = true;
-        }
-
         internalTo4YearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -94,7 +70,7 @@ public class InternalTransferRequirements extends AppCompatActivity {
         applicationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(InternalTransferRequirements.this, FourYearPlanActivity.class));
+                startActivity(new Intent(InternalTransferRequirements.this, LEPApplicationActivity.class));
             }
         });
     }
