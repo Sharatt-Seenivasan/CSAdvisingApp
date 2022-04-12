@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/CMSC131"
+        android:title="CMSC131"/>
+    <item
+        android:id="@+id/CMSC132"
+        android:title="CMSC132"/>
+    <item
+        android:id="@+id/CMSC216"
+        android:title="CMSC216"/>
+    <item
+        android:id="@+id/CMSC250"
+        android:title="CMSC250"/>
+    <item
+        android:id="@+id/CMSC320"
+        android:title="CMSC320"/>
+    <item
+        android:id="@+id/CMSC330"
+        android:title="CMSC330"/>
+    <item
+        android:id="@+id/CMSC351"
+        android:title="CMSC351"/>
+    <item
+        android:id="@+id/MATH140"
+        android:title="MATH140"/>
+    <item
+        android:id="@+id/MATH141"
+        android:title="MATH141"/>
+    <item
+        android:id="@+id/STAT400"
+        android:title="STAT400"/>
+</menu>
