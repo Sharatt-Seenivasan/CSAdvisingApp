@@ -8,20 +8,23 @@
         <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/activity_data_science_coursework_degree_requirements.xml" value="0.1" />
         <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/activity_degree_requirements.xml" value="0.10400000000000001" />
         <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/activity_four_year_plan.xml" value="0.1" />
-        <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/activity_general_coursework_degree_requirements.xml" value="0.25" />
+        <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/activity_general_coursework_degree_requirements.xml" value="0.2" />
         <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/activity_general_education_degree_requirements.xml" value="0.1" />
         <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/activity_internal_transfer_requirements.xml" value="0.12" />
         <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/activity_lower_level_coursework_degree_requirements.xml" value="0.2" />
         <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/activity_lower_level_coursework_degree_requirements2.xml" value="0.1046875" />
-        <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/activity_machine_learning_coursework_degree_requirements.xml" value="0.1" />
+        <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/activity_machine_learning_coursework_degree_requirements.xml" value="0.12708333333333333" />
         <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/activity_quantum_information_coursework_degree_requirements.xml" value="0.12708333333333333" />
         <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/activity_select_track.xml" value="0.16" />
         <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/activity_upper_level_concentration_requirements.xml" value="0.12708333333333333" />
         <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/appointment_activity.xml" value="0.2" />
-        <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/infopopupwindow.xml" value="0.1" />
         <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/list_group.xml" value="0.11592409240924093" />
         <entry key="..\:/Users/shara/AndroidStudioProjects/CSAdvisingApp/app/src/main/res/layout/list_item.xml" value="0.11592409240924093" />
+        <entry key="app/src/main/res/layout/activity_internal_transfer_requirements.xml" value="0.26644736842105265" />
+        <entry key="app/src/main/res/layout/activity_lepapplication.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_lower_level_coursework_degree_requirements.xml" value="0.24287280701754385" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2671875" />
       </map>
     </option>
   </component>

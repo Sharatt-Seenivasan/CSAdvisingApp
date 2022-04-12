@@ -295,4 +295,22 @@ public class ExpandableListDataItems {
         return expandableDetailList;
 
     }
+
+    // classes temporarily hard-coded, should be retrieved based on user input.
+    // i do not know where that's happening.
+    public static HashMap<String, List<String>> getGatewayRequirements() {
+        HashMap<String, List<String>> expandableDetailList = new HashMap<String, List<String>>();
+
+        List<String> remaining = new ArrayList<String>();
+        remaining.add("CMSC132 (in progress)");
+
+        List<String> completed = new ArrayList<String>();
+        completed.add("CMSC131");
+        completed.add("MATH140");
+
+        expandableDetailList.put("Remaining", remaining);
+        expandableDetailList.put("Completed", completed);
+
+        return expandableDetailList;
+    }
 }

@@ -17,9 +17,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CSAdvisingApp">
         <activity
+            android:name=".LEPApplicationActivity"
+            android:exported="false" />
+        <activity
             android:name=".InfoPopUpWindowActivity"
             android:exported="false"
-            android:theme="@style/Theme.CSAdvisingApp.infoPopUpWindowTheme"/>
+            android:theme="@style/Theme.CSAdvisingApp.infoPopUpWindowTheme" />
         <activity android:name=".FourYearPlanActivity" />
         <activity
             android:name=".InternalTransferRequirements"

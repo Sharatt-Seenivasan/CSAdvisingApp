@@ -53,7 +53,7 @@
         android:layout_marginBottom="186dp"
         android:background="@android:color/darker_gray"
         android:backgroundTint="@android:color/darker_gray"
-        android:text="Prospective LTSC Students"
+        android:text="Internal Transfer Requirements"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

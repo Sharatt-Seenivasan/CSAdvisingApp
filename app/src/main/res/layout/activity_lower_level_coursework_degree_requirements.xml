@@ -19,7 +19,7 @@ tools:context=".LowerLevelCourseworkDegreeRequirementsActivity">
         android:divider="@android:color/darker_gray"
         android:dividerHeight="0.5dp"
         android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
-        android:translationY="100dp"/>
+        android:translationY="100dp" />
 
     <Button
         android:id="@+id/lowerLevelButton"

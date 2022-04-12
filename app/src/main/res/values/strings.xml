@@ -88,7 +88,8 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
-    <string name="internal_gateway_header">Internal Transfer Students</string>
+    <string name="internal_gateway_header">Internal Transfer Requirements</string>
+
     <string name="click_to_add_class">CLICK TO ADD CLASS</string>
     <string name="zero_credits">Credits: 0</string>
     <string name="view_requirements">View Degree Requirements</string>
