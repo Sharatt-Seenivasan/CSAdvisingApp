@@ -61,6 +61,9 @@ public class FourYearPlanActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         ArrayList<Spinner> spinners = new ArrayList<Spinner>();
+        String[] courses = getResources().getStringArray(R.array.course_selection);
+        String[] selectedCourses = new String[40];
+        int currentSemester = 0;
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_four_year_plan);
@@ -73,7 +76,14 @@ public class FourYearPlanActivity extends AppCompatActivity {
             s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
                 public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                    if (adapterView.getItemAtPosition(i) == "No") {
 
+                    }
+                    // THIS IS WHERE THE BULK OF THE CODE GOES
+
+                    // UPDATE CREDITS
+
+                    // IF COURSE IN THIS EQUALS A COURSE
                 }
 
                 @Override
@@ -82,6 +92,8 @@ public class FourYearPlanActivity extends AppCompatActivity {
                 }
             });
         }
+
+
     }
 
     private void populateSpinners(ArrayList<Spinner> spinnerList) {
