@@ -69,11 +69,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass1.1"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+                            android:contentDescription="@string/click_to_add_class"
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -86,12 +86,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass1.2"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
-                            android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
                             android:textStyle="bold"
@@ -103,12 +101,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass1.3"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
-                            android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
                             android:textStyle="bold"
@@ -120,11 +116,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass1.4"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -137,11 +133,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass1.5"
                             android:layout_width="250dp"
                             android:layout_height="050dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -193,11 +189,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass2.1"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -210,11 +206,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass2.2"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -227,11 +223,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass2.3"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -244,11 +240,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass2.4"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -261,11 +257,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass2.5"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -317,11 +313,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass3.1"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -334,11 +330,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass3.2"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -351,11 +347,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass3.3"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -368,11 +364,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass3.4"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -385,11 +381,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass3.5"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -441,11 +437,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass4.1"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -458,11 +454,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass4.2"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -475,11 +471,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass4.3"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -492,11 +488,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass4.4"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -509,11 +505,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass4.5"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -574,11 +570,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass5.1"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -591,11 +587,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass5.2"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -608,11 +604,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass5.3"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -625,11 +621,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass5.4"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -642,11 +638,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass5.5"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -697,11 +693,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass6.1"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -714,11 +710,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass6.2"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -731,11 +727,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass6.3"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -748,11 +744,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass6.4"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -765,11 +761,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass6.5"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -820,11 +816,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass7.1"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -837,11 +833,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass7.2"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -854,11 +850,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass7.3"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -871,11 +867,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass7.4"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -888,11 +884,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass7.5"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -943,11 +939,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass8.1"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -960,11 +956,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass8.2"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -977,11 +973,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass8.3"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -994,11 +990,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass8.4"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
+
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"
@@ -1011,11 +1007,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <androidx.appcompat.widget.AppCompatButton
+                        <Spinner
                             android:id="@+id/addClass8.5"
                             android:layout_width="250dp"
                             android:layout_height="50dp"
-                            android:background="@color/lighter_gray"
                             android:text="@string/click_to_add_class"
                             android:textColor="@android:color/black"
                             android:textSize="20sp"

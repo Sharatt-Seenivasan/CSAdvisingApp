@@ -30,7 +30,6 @@
     <string name="sem7">Seventh Semester</string>
     <string name="sem8">Eighth Semester</string>
 
-
     <string name="advising_title">Advising</string>
     <string name="advising_time">Preferred Time</string>
     <string name="advising_day">Preferred Day</string>
@@ -93,4 +92,75 @@
     <string name="click_to_add_class">HOLD TO ADD CLASS</string>
     <string name="zero_credits">Credits: 0</string>
     <string name="view_requirements">View Degree Requirements</string>
+
+    <string-array name="course_selection">
+        <item>Click to select course</item>
+        <item>CMSC 451 (3 credits) Design and Analysis of Computer Algorithms</item>
+        <item>CMSC 454 (3 credits) Algorithms for Data Science</item>
+        <item>CMSC 460 (3 credits) Computational Methods</item>
+        <item>CMSC 426 (3 credits) Computer Vision</item>
+        <item>CMSC/AMSC 460 (3 credits) Computational Methods</item>
+        <item>CMSC 470 (3 credits) Natural Language Processing</item>
+        <item>CMSC 472 (3 credits) Introduction to Deep Learning</item>
+        <item>CMSC 473 (3 credits) Capstone in Machine Learning</item>
+        <item>CMSC 474 (3 credits) Introduction to Computational Game Theory</item>
+        <item>CMSC 476 (3 credits) Robotics and Perception</item>
+        <item>CMSC 451 (3 credits) Design and Analysis of Computer Algorithms </item>
+        <item>CMSC 452 (3 credits) Elementary Theory of Computation </item>
+        <item>CMSC 454 (3 credits) Algorithms for Data Science </item>
+        <item>CMSC 456 (3 credits) Cryptology </item>
+        <item>CMSC 457 (3 credits) Introduction to Quantum Computing </item>
+        <item>CMSC 474 (3 credits) Introduction to Computational Game Theory</item>
+        <item>MATH 140 (4 credits) Calculus I </item>
+        <item>MATH 141 (4 credits) Calculus II </item>
+        <item>CMSC 411 (3 credits) Computer Systems Architecture</item>
+        <item>CMSC 412 (4 credits) Operating Systems </item>
+        <item>CMSC 417 (3 credits) Computer Networks</item>
+        <item>CMSC 430 (3 credits) Introduction to Compilers</item>
+        <item>CMSC 433 (3 credits) Programming Language Technologies and Paradigms</item>
+        <item>CMSC 420 (3 credits) Data Structures </item>
+        <item>CMSC 421 (3 credits) Introduction to Artificial Intelligence </item>
+        <item>CMSC 422 (3 credits) Machine Learning </item>
+        <item>CMSC 423 (3 credits) Bioinformatic Algorithms, Databases, and Tools </item>
+        <item>CMSC 424 (3 credits) Database Design </item>
+        <item>CMSC 426 (3 credits) Computer Vision </item>
+        <item>CMSC 427 (3 credits) Computer Graphics </item>
+        <item>CMSC 470 (3 credits) Introduction to Natural Language Processing </item>
+        <item>CMSC 471 (3 credits) Introduction to Data Visualization </item>
+        <item>CMSC 460 (3 credits) Computational Methods  or CMSC 466 (3 credits) Introduction to Numerical Analysis</item>
+        <item>CMSC 412 (4 credits) Operating Systems</item>
+        <item>CMSC 414 (3 credits) Computer and Network Security</item>
+        <item>CMSC 416 (3 credits) Introduction to Parallel Computing</item>
+        <item>CMSC 417 (3 credits) Computer Networks </item>
+        <item>MATH 240 (4 credits) Linear Algebra </item>
+        <item>STAT 400 (3 credits) Applied Probability and Statistics I</item>
+        <item>CMSC 320 (3 credits) Introduction to Data Science</item>
+        <item>CMSC 422 (3) Introduction to Machine Learning</item>
+        <item>CMSC 424 (3 credits) Database Design</item>
+        <item>CMSC 402 (3 credits) Bioinformatic Algorithms and Methods for Functional Genomics and Proteomics</item>
+        <item>CMSC 420 (3 credits) Data Structures</item>
+        <item>CMSC 421 (3 credits) Introduction to Artificial Intelligence</item>
+        <item>CMSC 423 (3 credits) Bioinformatic Algorithms, Databases, and Tools</item>
+        <item>CMSC 425 (3 credits) Game Programming</item>
+        <item>CMSC 430 (3 credits) Introduction to Compilers </item>
+        <item>CMSC 433 (3 credits) Programming Language Technologies and Paradigms </item>
+        <item>CMSC 434 (3 credits) Introduction to Human-Computer Interaction </item>
+        <item>CMSC 435 (3 credits) Software Engineering </item>
+        <item>CMSC 436 (3 credits) Hand Held Programming Devices </item>
+        <item>CMSC 335 (3 credits) Web Application Development with JavaScript</item>
+        <item>CMSC 389N (3 credits) Special Topics in Computer Science; Introduction to PHP and JavaScript</item>
+        <item>CMSC 472 (3 credits) Introduction to Deep Learning</item>
+        <item>CMSC 473 (3 credits) Capstone in Machine Learning</item>
+        <item>CMSC 475 (3 credits) Combinatorics and Game Theory</item>
+        <item>CMSC 131 Object-Oriented (4 credits) Programming I</item>
+        <item>CMSC 133 (2 Credits) Object-Oriented Programming I Beyond Fun</item>
+        <item>CMSC 132 (4 credit) Object-Oriented Programming II </item>
+        <item>CMSC 216 (4 credits) Introduction to Computer Systems </item>
+        <item>CMSC 250 (4 credits) Discrete Structures </item>
+        <item>CMSC 330 (3 credits) Organization of Programming Languages </item>
+        <item>CMSC 351 (3 credits) Algorithms </item>
+        <item>CMSC 434 (3 credits) Introduction to Human-Computer Interaction</item>
+        <item>CMSC 435 (3 credits) Software Engineering</item>
+    </string-array>
+    <string name = "degreeReqsColorLegend"><b>Legend:</b>\n<font color = '#d6d6d6'>Gray</font> - Not on 4-Year Plan\n<font color = '#F7F14A'>Yellow</font> - On 4-Year Plan but not completed\n<font color = '#3DDC84'>Green</font> - On 4-Year Plan and completed</string>
 </resources>
