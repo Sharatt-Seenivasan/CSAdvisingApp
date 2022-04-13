@@ -95,6 +95,8 @@
 
     <string-array name="course_selection">
         <item>Click to select course</item>
+        <item>CMSC 131 Object-Oriented (4 credits) Programming I</item>
+        <item>CMSC 132 (4 credit) Object-Oriented Programming II </item>
         <item>CMSC 451 (3 credits) Design and Analysis of Computer Algorithms</item>
         <item>CMSC 454 (3 credits) Algorithms for Data Science</item>
         <item>CMSC 460 (3 credits) Computational Methods</item>
@@ -152,9 +154,7 @@
         <item>CMSC 472 (3 credits) Introduction to Deep Learning</item>
         <item>CMSC 473 (3 credits) Capstone in Machine Learning</item>
         <item>CMSC 475 (3 credits) Combinatorics and Game Theory</item>
-        <item>CMSC 131 Object-Oriented (4 credits) Programming I</item>
         <item>CMSC 133 (2 Credits) Object-Oriented Programming I Beyond Fun</item>
-        <item>CMSC 132 (4 credit) Object-Oriented Programming II </item>
         <item>CMSC 216 (4 credits) Introduction to Computer Systems </item>
         <item>CMSC 250 (4 credits) Discrete Structures </item>
         <item>CMSC 330 (3 credits) Organization of Programming Languages </item>

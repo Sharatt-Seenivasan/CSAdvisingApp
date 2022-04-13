@@ -4,10 +4,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -57,6 +59,7 @@ public class FourYearPlanActivity extends AppCompatActivity {
     public Spinner class8_3;
     public Spinner class8_4;
     public Spinner class8_5;
+    public Button add131and132;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,11 +78,11 @@ public class FourYearPlanActivity extends AppCompatActivity {
         for (Spinner s : spinners) {
             s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
-                public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                    if (adapterView.getItemAtPosition(i) == "No") {
-
+                public void onItemSelected(AdapterView<?> parent, View view, int i, long l) {
+                    if (parent.getItemAtPosition(i).equals("CMSC 420 (3 credits) or CMSC 421 (3 credits)") ||
+                    parent.getItemAtPosition(i).equals("CMSC 434 (3 credits) or CMSC 436 (3 credits)")) {
+                        Toast.makeText(getBaseContext(),"This is a tough workload!", Toast.LENGTH_LONG).show();
                     }
-                    // THIS IS WHERE THE BULK OF THE CODE GOES
 
                     // UPDATE CREDITS
 
@@ -93,7 +96,14 @@ public class FourYearPlanActivity extends AppCompatActivity {
             });
         }
 
-
+        add131and132 = findViewById(R.id.add131and132);
+        add131and132.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                class1_1.setSelection(1);
+                class2_1.setSelection(2);
+            }
+        });
     }
 
     private void populateSpinners(ArrayList<Spinner> spinnerList) {

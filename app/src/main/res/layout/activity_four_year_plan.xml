@@ -1066,6 +1066,12 @@
                 android:textColor="@color/white"
                 android:textSize="34sp"
                 android:textStyle="bold" />
+            <Button
+                android:id="@+id/add131and132"
+                android:layout_width="300dp"
+                android:layout_height="75dp"
+                android:layout_gravity="left|center_vertical"
+                android:text="Add 131 and 132 in the first two semesters"/>
         </LinearLayout>
     </ScrollView>
 
