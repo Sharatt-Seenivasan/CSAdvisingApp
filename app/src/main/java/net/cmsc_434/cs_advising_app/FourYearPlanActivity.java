@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
+import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -60,20 +61,33 @@ public class FourYearPlanActivity extends AppCompatActivity {
     public Spinner class8_4;
     public Spinner class8_5;
     public Button add131and132;
+    public Spinner selectSemester;
+    public TableLayout firstSemester;
+    public TableLayout secondSemester;
+    public TableLayout thirdSemester;
+    public TableLayout fourthSemester;
+    public TableLayout fifthSemester;
+    public TableLayout sixthSemester;
+    public TableLayout seventhSemester;
+    public TableLayout eighthSemester;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         ArrayList<Spinner> spinners = new ArrayList<Spinner>();
         String[] courses = getResources().getStringArray(R.array.course_selection);
-        String[] selectedCourses = new String[40];
+        String[] selectedCourses = new String[70];
         int currentSemester = 0;
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_four_year_plan);
         setTitle("Four Year Plan Builder");
         populateSpinners(spinners);
         ArrayAdapter a = ArrayAdapter.createFromResource(this, R.array.course_selection, android.R.layout.simple_spinner_item);
         setAdapters(spinners, a);
+
+        selectSemester = findViewById(R.id.select_semester);
+        ArrayAdapter selectSems = ArrayAdapter.createFromResource(this, R.array.semester_selection, android.R.layout.simple_spinner_item);
+        selectSemester.setAdapter(selectSems);
+        selectSemester.setSelection(0);
 
         for (Spinner s : spinners) {
             s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -83,10 +97,6 @@ public class FourYearPlanActivity extends AppCompatActivity {
                     parent.getItemAtPosition(i).equals("CMSC 434 (3 credits) or CMSC 436 (3 credits)")) {
                         Toast.makeText(getBaseContext(),"This is a tough workload!", Toast.LENGTH_LONG).show();
                     }
-
-                    // UPDATE CREDITS
-
-                    // IF COURSE IN THIS EQUALS A COURSE
                 }
 
                 @Override
@@ -104,6 +114,57 @@ public class FourYearPlanActivity extends AppCompatActivity {
                 class2_1.setSelection(2);
             }
         });
+
+        selectSemester = findViewById(R.id.select_semester);
+        assignSemesterViews();
+        TableLayout[] semesters = new TableLayout[8];
+        organizeSemesterViews(semesters);
+
+        selectSemester.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int i, long l) {
+                int count = 0;
+                while (count < i) {
+                    semesters[count].setBackgroundColor(getResources().getColor(R.color.green));
+                    count += 1;
+                }
+
+                semesters[count].setBackgroundColor(getResources().getColor(R.color.yellow));
+                count += 1;
+
+                while (count < 8) {
+                    semesters[count].setBackgroundColor(getResources().getColor(R.color.umd_red));
+                    count += 1;
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+    }
+
+    private void assignSemesterViews() {
+        firstSemester = findViewById(R.id.firstSemester);
+        secondSemester = findViewById(R.id.secondSemester);
+        thirdSemester = findViewById(R.id.thirdSemester);
+        fourthSemester = findViewById(R.id.fourthSemester);
+        fifthSemester = findViewById(R.id.fifthSemester);
+        sixthSemester = findViewById(R.id.sixthSemester);
+        seventhSemester = findViewById(R.id.seventhSemester);
+        eighthSemester = findViewById(R.id.eighthSemester);
+    }
+
+    private void organizeSemesterViews(TableLayout[] sems) {
+        sems[0] = firstSemester;
+        sems[1] = secondSemester;
+        sems[2] = thirdSemester;
+        sems[3] = fourthSemester;
+        sems[4] = fifthSemester;
+        sems[5] = sixthSemester;
+        sems[6] = seventhSemester;
+        sems[7] = eighthSemester;
     }
 
     private void populateSpinners(ArrayList<Spinner> spinnerList) {
@@ -192,6 +253,7 @@ public class FourYearPlanActivity extends AppCompatActivity {
     private void setAdapters(ArrayList<Spinner> spinnerList, ArrayAdapter arrayAdapter) {
         for (Spinner s : spinnerList) {
             s.setAdapter(arrayAdapter);
+            s.setSelection(0);
         }
     }
 }

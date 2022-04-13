@@ -163,6 +163,17 @@
         <item>CMSC 435 (3 credits) Software Engineering</item>
         <item>CMSC 420 (3 credits) or CMSC 421 (3 credits)</item>
         <item>CMSC 434 (3 credits) or CMSC 436 (3 credits)</item>
+        <item>CMSC 421 (3 credits) or CMSC 422 (3 credits)</item>
+    </string-array>
+    <string-array name="semester_selection">
+        <item>(Click to select current semester)1st semester</item>
+        <item>2nd semester</item>
+        <item>3rd semester</item>
+        <item>4th semester</item>
+        <item>5th semester</item>
+        <item>6th semester</item>
+        <item>7th semester</item>
+        <item>8th semester</item>
     </string-array>
     <string name = "degreeReqsColorLegend"><b>Legend:</b>\n<font color = '#d6d6d6'>Gray</font> - Not on 4-Year Plan\n<font color = '#F7F14A'>Yellow</font> - On 4-Year Plan but not completed\n<font color = '#3DDC84'>Green</font> - On 4-Year Plan and completed</string>
 </resources>
